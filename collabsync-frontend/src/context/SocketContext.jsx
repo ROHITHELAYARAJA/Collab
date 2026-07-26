@@ -44,7 +44,7 @@ export function SocketProvider({ children }) {
 
     setConnectionStatus('connecting')
 
-    const wsUrl = `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}/ws?accessToken=${encodeURIComponent(token)}`
+    const wsUrl = `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}/api/ws?accessToken=${encodeURIComponent(token)}`
     const ws = new WebSocket(wsUrl)
 
     ws.onopen = () => {
