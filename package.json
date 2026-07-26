@@ -1,0 +1,10 @@
+{
+  "name": "collabsync-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix collabsync-frontend run dev",
+    "start": "npm --prefix collabsync-frontend run dev",
+    "build": "npm --prefix collabsync-frontend run build",
+    "test": "npm --prefix collabsync-frontend run test:run"
+  }
+}

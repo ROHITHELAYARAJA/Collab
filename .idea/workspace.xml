@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b755bf0a-cbf9-4648-b3cf-4ee3e400abba" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/erohi/OneDrive/Desktop/web-app" value="3H1hjySSQHDfhXHatfKHUalKEZF" />
+    </persistenceIdMap>
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.5328859718410337" />
+      <entry key="MS500" value="4.229509147308482" />
+      <entry key="S2" value="7.144550011023431" />
+      <entry key="S5" value="8.174643011623516" />
+      <entry key="S10" value="8.571799416683506" />
+      <entry key="S30" value="8.853646038202577" />
+      <entry key="S60" value="8.92635930233247" />
+      <entry key="M2" value="8.963062866491502" />
+      <entry key="M5" value="8.985197007991923" />
+      <entry key="M10" value="8.99259380500554" />
+      <entry key="M15" value="8.995061491765913" />
+      <entry key="M30" value="8.997530223259533" />
+      <entry key="H1" value="8.998764980941798" />
+      <entry key="H2" value="8.999382457794892" />
+      <entry key="H4" value="8.999691220727943" />
+      <entry key="D1" value="8.999948535653296" />
+      <entry key="W1" value="8.999992647922683" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.3181491041487063" />
+      <entry key="MS500" value="4.031117646553214" />
+      <entry key="S2" value="7.061977951301608" />
+      <entry key="S5" value="8.137418420326334" />
+      <entry key="S10" value="8.55239870627167" />
+      <entry key="S30" value="8.846994614286986" />
+      <entry key="S60" value="8.923009913839822" />
+      <entry key="M2" value="8.96138220610813" />
+      <entry key="M5" value="8.984523305900325" />
+      <entry key="M10" value="8.99225671379587" />
+      <entry key="M15" value="8.99483671088538" />
+      <entry key="M30" value="8.997417806106135" />
+      <entry key="H1" value="8.998708765685048" />
+      <entry key="H2" value="8.999354348496285" />
+      <entry key="H4" value="8.999677165661051" />
+      <entry key="D1" value="8.999946193084147" />
+      <entry key="W1" value="8.999992313268526" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3H1hjySSQHDfhXHatfKHUalKEZF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CollabSyncApplication.executor&quot;: &quot;Run&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/erohi/OneDrive/Desktop/web-app&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.intellij.mcpserver.settings&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="web-app" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="web-app" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-63390994e64e-intellij.indexing.shared.core-IU-262.8665.337" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.8665.337" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b755bf0a-cbf9-4648-b3cf-4ee3e400abba" name="Changes" comment="" />
+      <created>1785041620605</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1785041620605</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
