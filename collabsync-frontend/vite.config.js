@@ -20,14 +20,10 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'http://localhost:8081',
+        target: process.env.VITE_API_PROXY_TARGET || 'http://localhost:8080',
         changeOrigin: true,
-        ws: true, // Enable WebSocket proxying for /api/*
-      },
-      '/ws': {
-        target: 'ws://localhost:8081',
         ws: true,
-      }
+      },
     }
   }
 })

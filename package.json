@@ -4,6 +4,9 @@
   "scripts": {
     "dev": "npm --prefix collabsync-frontend run dev",
     "start": "npm --prefix collabsync-frontend run dev",
+    "dev:infra": "docker compose -f collabsync/docker-compose.yml up -d postgres redis kafka",
+    "dev:backend": "cd collabsync && mvnw.cmd spring-boot:run -Dspring-boot.run.profiles=dev",
+    "dev:all": "docker compose -f collabsync/docker-compose.yml up --build",
     "build": "npm --prefix collabsync-frontend run build",
     "test": "npm --prefix collabsync-frontend run test:run"
   }

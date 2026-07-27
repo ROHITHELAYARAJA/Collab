@@ -3,7 +3,6 @@ C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\
 C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\config\KafkaConfig.java
 C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\config\RedisConfig.java
 C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\config\RedisListenerConfig.java
-C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\config\RedisMessageListener.java
 C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\config\RedisMessageListenerAdapter.java
 C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\config\SecurityConfig.java
 C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\config\WebSocketConfig.java
@@ -60,7 +59,6 @@ C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\
 C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\security\CustomUserDetailsService.java
 C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\security\JwtAuthenticationFilter.java
 C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\security\JwtTokenProvider.java
-C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\security\SecurityConfig.java
 C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\service\DocumentService.java
 C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\service\KafkaConsumerService.java
 C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\service\KafkaProducerService.java
@@ -70,4 +68,3 @@ C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\
 C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\service\WorkspaceMemberService.java
 C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\websocket\ChatWebSocketController.java
 C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\websocket\DocumentWebSocketController.java
-C:\Users\erohi\OneDrive\Desktop\web-app\collabsync\src\main\java\com\collabsync\websocket\WebSocketConfig.java

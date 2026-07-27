@@ -4,7 +4,6 @@ com\collabsync\config\RedisListenerConfig$2.class
 com\collabsync\dto\websocket\ErrorMessage.class
 com\collabsync\repository\UserRepository.class
 com\collabsync\dto\websocket\AckMessage$AckMessageBuilder.class
-com\collabsync\security\SecurityConfig.class
 com\collabsync\service\RedisPubSubService.class
 com\collabsync\dto\document\DocumentResponse.class
 com\collabsync\dto\websocket\AckMessage.class
@@ -32,7 +31,6 @@ com\collabsync\dto\chat\ChatRoomResponse$ChatRoomResponseBuilder.class
 com\collabsync\dto\chat\ChatMessageResponse.class
 com\collabsync\dto\document\DocumentRequest.class
 com\collabsync\controller\DocumentController.class
-com\collabsync\config\RedisMessageListener.class
 com\collabsync\dto\auth\LoginRequest.class
 com\collabsync\dto\chat\ChatRoomResponse.class
 com\collabsync\model\WorkspaceMember.class
@@ -106,7 +104,6 @@ com\collabsync\dto\websocket\DocOpMessage$OpPayload.class
 com\collabsync\dto\document\DocumentSnapshotResponse.class
 com\collabsync\model\DocumentOp$OpType.class
 com\collabsync\repository\DocumentRepository.class
-com\collabsync\websocket\WebSocketConfig.class
 com\collabsync\config\KafkaConfig.class
 com\collabsync\dto\auth\RegisterRequest$RegisterRequestBuilder.class
 com\collabsync\repository\WorkspaceRepository.class

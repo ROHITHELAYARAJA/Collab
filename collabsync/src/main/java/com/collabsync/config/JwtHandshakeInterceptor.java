@@ -38,13 +38,13 @@ public class JwtHandshakeInterceptor implements ChannelInterceptor, HandshakeInt
         if (StompCommand.CONNECT.equals(accessor.getCommand())) {
             String authHeader = accessor.getFirstNativeHeader("Authorization");
             if (authHeader == null || !authHeader.startsWith("Bearer ")) {
-                log.warn("Missing or invalid Authorization header in CONNECT frame");
+                log.warn("Missing or invalid Authorization header in CONNECT frame, headers: {}", accessor.toNativeHeaderMap());
                 throw new IllegalArgumentException("Missing or invalid Authorization header");
             }
 
             String token = authHeader.substring(7);
             if (!jwtTokenProvider.validateToken(token)) {
-                log.warn("Invalid JWT token in CONNECT frame");
+                log.warn("Invalid JWT token in CONNECT frame: {}", token);
                 throw new IllegalArgumentException("Invalid JWT token");
             }
 
@@ -73,19 +73,18 @@ public class JwtHandshakeInterceptor implements ChannelInterceptor, HandshakeInt
     @Override
     public boolean beforeHandshake(ServerHttpRequest request, ServerHttpResponse response,
                                    WebSocketHandler wsHandler, Map<String, Object> attributes) {
-        // Extract token from query param as fallback
         String query = request.getURI().getQuery();
+        log.debug("Handshake query: {}", query); // DEBUG LOG
         if (query != null && query.contains("accessToken=")) {
-            String token = query.substring(query.indexOf("accessToken=") + 12);
-            if (token.contains("&")) {
-                token = token.substring(0, token.indexOf("&"));
-            }
-            if (!token.isEmpty() && jwtTokenProvider.validateToken(token)) {
+            String token = query.split("accessToken=")[1].split("&")[0];
+            if (jwtTokenProvider.validateToken(token)) {
                 attributes.put("userId", jwtTokenProvider.getUserIdFromToken(token));
                 attributes.put("email", jwtTokenProvider.getUsernameFromToken(token));
+                return true; // Token valid, allow handshake
             }
         }
-        return true;
+        log.warn("Handshake rejected: Missing or invalid token in query");
+        return false; // Reject handshake if no valid token
     }
 
     @Override

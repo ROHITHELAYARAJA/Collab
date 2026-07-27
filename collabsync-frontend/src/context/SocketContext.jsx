@@ -44,6 +44,8 @@ export function SocketProvider({ children }) {
 
     setConnectionStatus('connecting')
 
+    // Revert to native WebSocket if dependencies are missing,
+    // but the backend needs SockJS if configured in WebSocketConfig.java
     const wsUrl = `${window.location.protocol === 'https:' ? 'wss:' : 'ws:'}//${window.location.host}/api/ws?accessToken=${encodeURIComponent(token)}`
     const ws = new WebSocket(wsUrl)
 

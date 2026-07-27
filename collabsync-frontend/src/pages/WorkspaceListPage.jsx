@@ -21,6 +21,7 @@ export function WorkspaceListPage() {
     try {
       const response = await apiCall('/workspaces')
       if (response.ok) {
+        // Use the wrapper's json() function
         const data = await response.json()
         setWorkspaces(data.content || data)
       } else {
@@ -45,10 +46,17 @@ export function WorkspaceListPage() {
       })
 
       if (response.ok) {
-        const workspace = await response.json()
-        setWorkspaces(prev => [...prev, workspace])
-        setShowCreateModal(false)
-        setNewWorkspaceName('')
+        // Workspace creation might return no content on success, handle gracefully
+        try {
+            const data = await response.json()
+            setWorkspaces(prev => [...prev, data])
+            setShowCreateModal(false)
+            setNewWorkspaceName('')
+        } catch (e) {
+            // If no content, just close modal
+            setShowCreateModal(false)
+            setNewWorkspaceName('')
+        }
       } else {
         const data = await response.json()
         alert(data.message || 'Failed to create workspace')
@@ -143,7 +151,7 @@ export function WorkspaceListPage() {
               <h2 className="modal-title">Create Workspace</h2>
               <button className="modal-close" onClick={() => setShowCreateModal(false)}>✕</button>
             </div>
-            <form onSubmit={handleCreate} className="modal-body">
+            <form id="create-workspace-form" onSubmit={handleCreate} className="modal-body">
               <div className="form-group">
                 <label className="form-label" htmlFor="workspaceName">Workspace Name</label>
                 <input

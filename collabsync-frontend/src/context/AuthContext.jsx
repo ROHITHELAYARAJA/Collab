@@ -52,7 +52,7 @@ export function AuthProvider({ children }) {
       const refreshed = await refreshAccessToken()
       if (refreshed) {
         // Retry the original request
-        headers['Authorization'] = `Bearer ${token}`
+        headers['Authorization'] = `Bearer ${token}` // Note: token might be updated by refreshAccessToken()
         return fetch(`${API_BASE}${endpoint}`, {
           ...options,
           headers,
@@ -65,7 +65,18 @@ export function AuthProvider({ children }) {
       }
     }
 
-    return response
+    // Safety check for empty body
+    const text = await response.text()
+    if (!text) {
+      return { ok: response.ok, status: response.status, json: () => ({}) }
+    }
+
+    // Return a wrapper that handles the body
+    return {
+      ok: response.ok,
+      status: response.status,
+      json: () => JSON.parse(text)
+    }
   }, [token, refreshToken, navigate])
 
   const refreshAccessToken = async () => {
@@ -110,7 +121,13 @@ export function AuthProvider({ children }) {
     }
 
     if (!response.ok) {
-      throw new Error(data.message || `Login failed (${response.status})`)
+      const serverUnavailable = response.status >= 500 && !data.message
+      throw new Error(
+        data.message ||
+          (serverUnavailable
+            ? 'Cannot reach the server. Start Docker, then run `npm run dev:infra` and `npm run dev:backend`.'
+            : `Login failed (${response.status})`)
+      )
     }
 
     setToken(data.accessToken)
@@ -150,7 +167,13 @@ export function AuthProvider({ children }) {
     }
 
     if (!response.ok) {
-      throw new Error(data.message || `Registration failed (${response.status})`)
+      const serverUnavailable = response.status >= 500 && !data.message
+      throw new Error(
+        data.message ||
+          (serverUnavailable
+            ? 'Cannot reach the server. Start Docker, then run `npm run dev:infra` and `npm run dev:backend`.'
+            : `Registration failed (${response.status})`)
+      )
     }
 
     // Auto-login after registration

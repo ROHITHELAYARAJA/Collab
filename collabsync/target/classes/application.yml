@@ -6,8 +6,8 @@ spring:
 
   datasource:
     url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/collabsync}
-    username: ${DATABASE_USER:collabsync}
-    password: ${DATABASE_PASSWORD:collabsync}
+    username: ${DATABASE_USER:postgres}
+    password: ${DATABASE_PASSWORD:rohith}
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 20
